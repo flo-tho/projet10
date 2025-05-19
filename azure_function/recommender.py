@@ -1,4 +1,9 @@
+import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
+
+
 class ContentBasedRecommender:
+
     def __init__(self, article_features: pd.DataFrame):
         """
         article_features: DataFrame indexé par article_id, colonnes = features
