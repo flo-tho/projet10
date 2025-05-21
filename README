@@ -1,0 +1,73 @@
+**MyContent – Recommandation d'articles (Content-Based + API Azure)**
+
+________________________________________
+Objectif
+________________________________________
+Développer un système de recommandation d’articles personnalisé, accessible via une API Azure Function, et intégré dans une application Streamlit pour démonstration.
+Approche : Content-Based Filtering basé sur les similarités cosine entre articles.
+
+________________________________________
+Structure du projet
+________________________________________
+📁 mycontent-recommender/
+├── app_interface.py                # Interface utilisateur Streamlit
+│
+├── azure_function/
+│   ├── article_features.pkl     # Matrice articles/features (embeddings)
+│   ├── user_history.json    # Données d'interactions/historique des utilisateurs
+│   ├── local.settings.json
+│   ├── recommender.py           # Classe ContentBasedRecommender
+│   ├── recommender_function/
+│   │    ├── __init__.py    # Azure Function (API HTTP)
+│   │    └──function.json   # fichier de configuration de la fonction Azure
+│   └── requirements.txt
+├── P10_notebooks.ipynb #notebook d'analyse exploratoire et test des modeles
+├── requirements.txt
+└── README.md
+
+________________________________________
+Lancer l'application en local
+________________________________________
+1. Installer les dépendances
+pip install -r requirements.txt
+
+2. Lancer l’API Azure Function localement
+cd azure_function
+func start
+Cela démarre une API locale sur http://localhost:7071/api/recommend
+
+3. Lancer l’app Streamlit
+Dans un autre terminal :
+streamlit run app_interface.py
+
+
+________________________________________
+Fonctionnement du modèle
+________________________________________
+Recommandations générées par similarité cosine entre vecteurs d’articles (article_features)
+
+Pour un utilisateur donné : moyenne des similarités des articles déjà lus
+Retourne un Top 5 articles personnalisés
+
+________________________________________
+Notebook
+________________________________________
+Plusieurs approches comparées :
+> Popularité
+> Content-based filtering (définitif)
+> Collaborative filtering (tests exploratoires)
+
+________________________________________
+Architecture technique
+________________________________________
+Azure Function (HTTP GET) : reçoit un user_id, renvoie 5 articles recommandés en JSON
+Streamlit App : interface utilisateur
+
+________________________________________
+Prochaines étapes
+________________________________________
+Blob Storage : stockage des articles et des embeddings
+Cosmos DB : enregistrement des interactions utilisateur
+Meilleure gestion des utilisateurs “cold-start” (nouveaux)
+Ajout de feedback utilisateur + mise à jour auto des embeddings
+Intégration pipeline de réentraînement
