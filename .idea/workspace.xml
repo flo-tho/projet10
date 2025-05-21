@@ -4,59 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39275394-2e9f-4543-88c0-99a22bc5f81c" name="Changes" comment="creation fonction azure">
-      <change afterPath="$PROJECT_DIR$/P10_notebook.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/azure_function/article_features.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/azure_function/recommender_function/function.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/azure_function/recommender_function/host.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/azure_function/user_history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/36ae1563e5e24bd1a5accca1c4fa9e71/meta.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/36ae1563e5e24bd1a5accca1c4fa9e71/metrics/Similarité_histo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/36ae1563e5e24bd1a5accca1c4fa9e71/tags/mlflow.runName" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/36ae1563e5e24bd1a5accca1c4fa9e71/tags/mlflow.source.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/36ae1563e5e24bd1a5accca1c4fa9e71/tags/mlflow.source.type" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/36ae1563e5e24bd1a5accca1c4fa9e71/tags/mlflow.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/6848a1a93c9542978ab1ba57fd7cf057/meta.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/6848a1a93c9542978ab1ba57fd7cf057/metrics/Similarité_histo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/6848a1a93c9542978ab1ba57fd7cf057/tags/mlflow.runName" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/6848a1a93c9542978ab1ba57fd7cf057/tags/mlflow.source.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/6848a1a93c9542978ab1ba57fd7cf057/tags/mlflow.source.type" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/6848a1a93c9542978ab1ba57fd7cf057/tags/mlflow.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/7642e0550e484b63baf5303ef382ca61/meta.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/7642e0550e484b63baf5303ef382ca61/metrics/Similarité_histo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/7642e0550e484b63baf5303ef382ca61/tags/mlflow.runName" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/7642e0550e484b63baf5303ef382ca61/tags/mlflow.source.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/7642e0550e484b63baf5303ef382ca61/tags/mlflow.source.type" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/7642e0550e484b63baf5303ef382ca61/tags/mlflow.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/8726bd3518804357bf82acc2d406effa/meta.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/8726bd3518804357bf82acc2d406effa/metrics/Similarité_histo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/8726bd3518804357bf82acc2d406effa/tags/mlflow.runName" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/8726bd3518804357bf82acc2d406effa/tags/mlflow.source.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/8726bd3518804357bf82acc2d406effa/tags/mlflow.source.type" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/8726bd3518804357bf82acc2d406effa/tags/mlflow.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/98b28ecc282f46de93d3cca677efd106/meta.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/98b28ecc282f46de93d3cca677efd106/metrics/Similarité_histo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/98b28ecc282f46de93d3cca677efd106/tags/mlflow.runName" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/98b28ecc282f46de93d3cca677efd106/tags/mlflow.source.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/98b28ecc282f46de93d3cca677efd106/tags/mlflow.source.type" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/98b28ecc282f46de93d3cca677efd106/tags/mlflow.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/a53d0b4ab4ce4a8994206c6c0ce48d8b/meta.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/a53d0b4ab4ce4a8994206c6c0ce48d8b/metrics/Similarité_histo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/a53d0b4ab4ce4a8994206c6c0ce48d8b/tags/mlflow.runName" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/a53d0b4ab4ce4a8994206c6c0ce48d8b/tags/mlflow.source.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/a53d0b4ab4ce4a8994206c6c0ce48d8b/tags/mlflow.source.type" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/a53d0b4ab4ce4a8994206c6c0ce48d8b/tags/mlflow.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/fddc4d80323048ec8bf742e39c82c84a/meta.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/fddc4d80323048ec8bf742e39c82c84a/metrics/Similarité_histo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/fddc4d80323048ec8bf742e39c82c84a/tags/mlflow.runName" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/fddc4d80323048ec8bf742e39c82c84a/tags/mlflow.source.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/fddc4d80323048ec8bf742e39c82c84a/tags/mlflow.source.type" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mlruns/105242366599690493/fddc4d80323048ec8bf742e39c82c84a/tags/mlflow.user" afterDir="false" />
+    <list default="true" id="39275394-2e9f-4543-88c0-99a22bc5f81c" name="Changes" comment="MAJ de la fonction azure et nouvelle hiérarchie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure_function/_init_.py" beforeDir="false" afterPath="$PROJECT_DIR$/azure_function/recommender_function/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure_function/function_app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure_function/recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/azure_function/recommender.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P10_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/P10_notebook.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_interface.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +56,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\flore\Openclassrooms\Projet 10" />
       <recent name="C:\Users\flore\Openclassrooms\Projet 10\azure_function\recommender_function" />
     </key>
   </component>
@@ -132,12 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1747583031185</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="MAJ de la fonction azure et nouvelle hiérarchie">
+      <option name="closed" value="true" />
+      <created>1747671378908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747671378908</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="creation fonction azure" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation fonction azure" />
+    <MESSAGE value="MAJ de la fonction azure et nouvelle hiérarchie" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAJ de la fonction azure et nouvelle hiérarchie" />
   </component>
 </project>
